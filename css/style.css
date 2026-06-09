@@ -19,8 +19,8 @@
 /* 1. 디자인 토큰 ----------------------------------------------------- */
 :root {
   /* 색상 */
-  --color-primary: #d6001c;        /* 시그니처 레드 */
-  --color-primary-dark: #a80016;
+  --color-primary: #1f63b8;        /* 시그니처 블루 (로고 컬러) */
+  --color-primary-dark: #154a8c;
   --color-navy: #0f1b2d;
   --color-navy-light: #1d2d44;
   --color-text: #1f2733;
@@ -158,16 +158,16 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
 }
 
-.logo .logo-mark {
-  display: inline-grid;
-  place-items: center;
-  width: 34px;
+.logo .logo-img {
   height: 34px;
-  border-radius: 9px;
-  background: var(--color-primary);
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 800;
+  width: auto;
+  display: block;
+}
+
+/* 푸터(어두운 배경)에서는 로고 텍스트가 보이도록 흰색으로 반전 */
+.site-footer .logo .logo-img {
+  filter: brightness(0) invert(1);
+  height: 32px;
 }
 
 .nav {
@@ -267,7 +267,7 @@ h1, h2, h3, h4 {
   right: -120px;
   width: 420px;
   height: 420px;
-  background: radial-gradient(circle, rgba(214, 0, 28, 0.35) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(31, 99, 184, 0.45) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -284,7 +284,7 @@ h1, h2, h3, h4 {
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.1em;
-  color: #ff8a96;
+  color: #8db8ec;
   margin-bottom: 18px;
 }
 
@@ -420,7 +420,7 @@ h1, h2, h3, h4 {
   font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--color-primary);
-  background: rgba(214, 0, 28, 0.08);
+  background: rgba(31, 99, 184, 0.1);
   padding: 4px 10px;
   border-radius: 100px;
   white-space: nowrap;
@@ -719,7 +719,7 @@ h1, h2, h3, h4 {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(214, 0, 28, 0.1);
+  box-shadow: 0 0 0 3px rgba(31, 99, 184, 0.15);
 }
 
 .form-group textarea {

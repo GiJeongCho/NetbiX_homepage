@@ -183,15 +183,19 @@
       // 허니팟(봇 차단)에 값이 있으면 조용히 무시
       if (form.querySelector('input[name="botcheck"]')?.checked) return;
 
-      const formData = new FormData(form);
-      formData.set("access_key", WEB3FORMS_ACCESS_KEY);
-      formData.set("from_name", "NetbiX 홈페이지 문의");
-      formData.set("subject", `[NetbiX 문의] ${formData.get("name") || "이름 미입력"}`);
-
-      // 관심 제품군 id → 사람이 읽을 수 있는 이름으로 치환
-      const interestId = formData.get("interest");
-      formData.set("관심 제품군", interestId ? catName(interestId) : "선택 안 함");
-      formData.delete("interest");
+      // FormData(multipart)는 한글 필드명이 헤더에서 깨지므로 JSON(UTF-8)으로 전송한다.
+      const val = (name) => (form.elements[name]?.value || "").trim();
+      const interestId = val("interest");
+      const payload = {
+        access_key: WEB3FORMS_ACCESS_KEY,
+        from_name: "NetbiX 홈페이지 문의",
+        subject: `[NetbiX 문의] ${val("name") || "이름 미입력"}`,
+        name: val("name"),
+        email: val("email"),
+        "회사/기관": val("company") || "(미입력)",
+        "관심 제품군": interestId ? catName(interestId) : "선택 안 함",
+        message: val("message"),
+      };
 
       const originalLabel = submitBtn ? submitBtn.textContent : "";
       if (submitBtn) {
@@ -202,8 +206,11 @@
       try {
         const res = await fetch("https://api.web3forms.com/submit", {
           method: "POST",
-          headers: { Accept: "application/json" },
-          body: formData,
+          headers: {
+            "Content-Type": "application/json; charset=utf-8",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(payload),
         });
         const result = await res.json();
         if (res.ok && result.success) {
