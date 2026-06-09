@@ -188,8 +188,8 @@
       const interestId = val("interest");
       const payload = {
         access_key: WEB3FORMS_ACCESS_KEY,
-        from_name: "NetbiX 홈페이지 문의",
-        subject: `[NetbiX 문의] ${val("name") || "이름 미입력"}`,
+        from_name: "Netbitex 홈페이지 문의",
+        subject: `[Netbitex 문의] ${val("name") || "이름 미입력"}`,
         name: val("name"),
         email: val("email"),
         "회사/기관": val("company") || "(미입력)",
