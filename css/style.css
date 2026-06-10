@@ -187,6 +187,13 @@ h1, h2, h3, h4 {
   color: var(--color-primary);
 }
 
+/* 견적 문의 버튼은 파란 배경 위 흰색 글씨 유지 (.nav a 보다 우선) */
+.nav a.btn--primary,
+.nav a.btn--primary:hover,
+.nav a.btn--primary.active {
+  color: #fff;
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
