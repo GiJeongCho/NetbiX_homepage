@@ -43,19 +43,33 @@
   function productCardHTML(p) {
     const specs = (p.specs || []).map((s) => `<li>${s}</li>`).join("");
     const featured = p.featured ? `<span class="badge-featured">대표 제품</span>` : "";
+    // 이미지가 있으면 사진을, 없거나 로드 실패 시 모델 약어 플레이스홀더를 보여준다.
+    const media = p.image
+      ? `<div class="product-media">
+           ${featured}
+           <img src="${p.image}" alt="${p.name}" loading="lazy"
+                onerror="this.closest('.product-media').classList.add('no-img');this.remove();" />
+           <span class="product-media-fallback" aria-hidden="true">${p.model}</span>
+         </div>`
+      : `<div class="product-media no-img">
+           ${featured}
+           <span class="product-media-fallback" aria-hidden="true">${p.model}</span>
+         </div>`;
     return `
       <article class="card product-card" data-category="${p.category}">
-        <div class="product-top">
-          <div>
-            ${featured}
-            <h3>${p.name}</h3>
-            <p class="product-tagline">${p.tagline}</p>
+        ${media}
+        <div class="product-body">
+          <div class="product-top">
+            <div>
+              <h3>${p.name}</h3>
+              <p class="product-tagline">${p.tagline}</p>
+            </div>
+            <span class="product-model">${p.model}</span>
           </div>
-          <span class="product-model">${p.model}</span>
+          <p class="product-desc">${p.desc}</p>
+          <ul class="product-specs">${specs}</ul>
+          <p class="product-cat-tag">분류 · ${catName(p.category)}</p>
         </div>
-        <p class="product-desc">${p.desc}</p>
-        <ul class="product-specs">${specs}</ul>
-        <p class="product-cat-tag">분류 · ${catName(p.category)}</p>
       </article>`;
   }
 

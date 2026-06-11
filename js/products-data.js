@@ -76,6 +76,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "Nexera Series",
+    image: "image/SSK종합카탈로그_images/page008_img01.png",
     model: "UHPLC",
     tagline: "초고속 액체 크로마토그래프(UHPLC)",
     desc: "IoT·클라우드 기반 네트워크 기술로 기기 상태를 실시간 모니터링하며, 약 7.8초의 초고속 주입으로 최대 17,000개 샘플을 연속 분석할 수 있는 신개념 UHPLC입니다.",
@@ -85,6 +86,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "i-Series",
+    image: "image/SSK종합카탈로그_images/page011_img06.png",
     model: "HPLC",
     tagline: "올인원 통합형 고속 액체 크로마토그래프(HPLC)",
     desc: "펌프·오토샘플러·컬럼오븐·검출기를 하나의 본체에 통합한 일체형 HPLC로, 터치패널만으로 PC 없이 직접 제어가 가능합니다.",
@@ -94,6 +96,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "Nexera Prep",
+    image: "image/SSK종합카탈로그_images/page012_img03.png",
     model: "Prep HPLC",
     tagline: "분취용 고속 액체 크로마토그래프",
     desc: "목적 성분을 고순도로 분리·회수하는 분취(Preparative) HPLC로, 소량부터 대량 정제까지 대응합니다.",
@@ -103,6 +106,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "Nexera UC",
+    image: "image/SSK종합카탈로그_images/page012_img05.png",
     model: "SFC",
     tagline: "초임계유체 크로마토그래프(SFC)",
     desc: "초임계 이산화탄소를 이동상으로 사용하는 SFC로, 키랄 분리와 친환경·고속 분석에 강점을 가집니다.",
@@ -112,6 +116,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "Nexera XS inert / lite inert",
+    image: "image/SSK종합카탈로그_images/page014_img03.png",
     model: "Bio HPLC",
     tagline: "바이오 비활성(inert) HPLC",
     desc: "금속과의 접촉을 최소화한 비활성 유로로, 인산화 펩타이드·항체·핵산 등 바이오 시료를 손실 없이 분석합니다.",
@@ -121,6 +126,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "Nexera MX",
+    image: "image/SSK종합카탈로그_images/page016_img05.png",
     model: "MS용 HPLC",
     tagline: "질량분석용 멀티플렉스 HPLC",
     desc: "여러 LC 유로를 하나의 질량분석기에 연결해 처리량을 극대화하는 다중 LC/MS용 프론트엔드 시스템입니다.",
@@ -130,6 +136,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "Nexera-e",
+    image: "image/SSK종합카탈로그_images/page016_img01.png",
     model: "2D-LC",
     tagline: "종합 2차원 액체 크로마토그래프",
     desc: "성격이 다른 두 컬럼을 조합해 복잡 시료를 고분해능으로 분리하는 종합 2차원(2D) LC 시스템입니다.",
@@ -139,6 +146,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "HIC-ESP",
+    image: "image/SSK종합카탈로그_images/page015_img01.png",
     model: "HIC",
     tagline: "소수성 상호작용 크로마토그래프",
     desc: "단백질의 소수성 차이를 이용해 변성 없이 분리하는 소수성 상호작용(HIC) 시스템으로, 항체 분석에 활용됩니다.",
@@ -148,6 +156,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "GPC 시스템",
+    image: "image/SSK종합카탈로그_images/page015_img03.png",
     model: "GPC/SEC",
     tagline: "겔 투과 크로마토그래프",
     desc: "분자 크기에 따라 분리하여 고분자의 분자량 및 분자량 분포를 측정하는 GPC/SEC 시스템입니다.",
@@ -157,6 +166,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "LCMS-2050",
+    image: "image/SSK종합카탈로그_images/page017_img05.png",
     model: "LC-MS",
     tagline: "단일사극자 액체 크로마토그래프 질량분석기",
     desc: "콤팩트한 본체에 고감도 단일사극자를 탑재한 LC/MS로, 일상 정성·정량 분석을 쉽고 빠르게 수행합니다.",
@@ -166,6 +176,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "LCMS-2020",
+    image: "image/SSK종합카탈로그_images/page019_img05.png",
     model: "LC-MS",
     tagline: "단일사극자 액체 크로마토그래프 질량분석기",
     desc: "고속 폴라리티 전환과 안정적인 감도를 제공하는 단일사극자 LC/MS로, 의약·식품 분석에 널리 사용됩니다.",
@@ -175,6 +186,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "LCMS-8040/8045/8050/8060 NX",
+    image: "image/SSK종합카탈로그_images/page019_img02.png",
     model: "LC-MS/MS",
     tagline: "삼중사극자 액체 크로마토그래프 질량분석기",
     desc: "초고감도·고속 스캔을 구현한 삼중사극자 LC/MS 패밀리로, 의약품·식품안전·임상 연구의 정밀 정량 분석에 최적화되어 있습니다.",
@@ -184,6 +196,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "LCMS-9030/9050",
+    image: "image/SSK종합카탈로그_images/page018_img02.png",
     model: "Q-TOF",
     tagline: "사극자 비행시간형 LC 질량분석기",
     desc: "사극자-비행시간형(Q-TOF) 결합으로 정확질량과 고분해능 데이터를 제공하여 미지 물질 동정 및 구조 분석에 활용됩니다.",
@@ -193,6 +206,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "DPiMS",
+    image: "image/SSK종합카탈로그_images/page020_img02.png",
     model: "PESI-MS",
     tagline: "프로브 일렉트로스프레이 이온화 질량분석",
     desc: "전처리를 최소화하고 시료에 프로브를 직접 접촉해 이온화하는 방식으로, 신속한 직접 질량분석을 지원합니다.",
@@ -202,6 +216,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "CLAM-2030",
+    image: "image/SSK종합카탈로그_images/page021_img03.png",
     model: "LC-MS 전처리",
     tagline: "전자동 전처리 모듈 결합 LC/MS",
     desc: "시료 채취부터 전처리·주입까지 전 과정을 자동화한 LC/MS 시스템으로, 임상·바이오 분석의 재현성과 안전성을 높입니다.",
@@ -211,6 +226,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "Nexis GC-2030",
+    image: "image/SSK종합카탈로그_images/page025_img01.png",
     model: "GC",
     tagline: "가스 크로마토그래프",
     desc: "고감도 검출기와 직관적 터치패널을 탑재한 차세대 가스 크로마토그래프로, 잔류농약·휘발성 유기물 분석에 폭넓게 사용됩니다.",
@@ -220,6 +236,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "GC-2014",
+    image: "image/SSK종합카탈로그_images/page025_img02.png",
     model: "GC",
     tagline: "범용 가스 크로마토그래프",
     desc: "다양한 검출기 구성을 지원하는 범용 GC로, 폭넓은 산업 현장과 연구 분석에 안정적으로 사용됩니다.",
@@ -229,6 +246,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "GC-2025",
+    image: "image/SSK종합카탈로그_images/page026_img02.png",
     model: "GC",
     tagline: "콤팩트 가스 크로마토그래프",
     desc: "설치 공간을 줄인 콤팩트 GC로, 기본 성능을 유지하면서 루틴 분석을 경제적으로 수행합니다.",
@@ -238,6 +256,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "Nexis SCD-2030",
+    image: "image/SSK종합카탈로그_images/page025_img03.png",
     model: "GC-SCD",
     tagline: "황 화학발광 검출 가스 크로마토그래프",
     desc: "황 화합물을 선택적·고감도로 검출하는 화학발광검출기(SCD) 결합 GC로, 연료·석유화학 분석에 사용됩니다.",
@@ -247,6 +266,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "HS-20 Series",
+    image: "image/SSK종합카탈로그_images/page026_img04.png",
     model: "헤드스페이스",
     tagline: "헤드스페이스 샘플러",
     desc: "시료 상부의 기체상을 GC로 도입하는 헤드스페이스 샘플러로, 잔류용매·휘발성 성분 분석에 사용됩니다.",
@@ -256,6 +276,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "AOC Series",
+    image: "image/SSK종합카탈로그_images/page026_img03.png",
     model: "오토샘플러",
     tagline: "GC용 자동 시료 주입 장치",
     desc: "다수 시료를 자동으로 주입·전처리하는 GC 오토샘플러로, 무인 연속 분석과 처리량 향상을 지원합니다.",
@@ -265,6 +286,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "GCMS-QP2020 NX",
+    image: "image/SSK종합카탈로그_images/page027_img01.png",
     model: "GC-MS",
     tagline: "단일사극자 가스 크로마토그래프 질량분석기",
     desc: "고감도·고속 스캔의 단일사극자 GC/MS로, 향기 성분·휘발성 유기물·식품 분석 등 폭넓은 정성·정량에 사용됩니다.",
@@ -274,6 +296,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "GCMS-TQ8040 NX",
+    image: "image/SSK종합카탈로그_images/page027_img02.png",
     model: "GC-MS/MS",
     tagline: "삼중사극자 가스 크로마토그래프 질량분석기",
     desc: "고감도 삼중사극자 GC/MS로, 다성분 동시 정량과 잔류농약·환경 분석을 빠르고 정밀하게 수행합니다.",
@@ -283,6 +306,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "GCMS-TQ8050 NX",
+    image: "image/SSK종합카탈로그_images/page027_img03.png",
     model: "GC-MS/MS",
     tagline: "삼중사극자 가스 크로마토그래프 질량분석기",
     desc: "초고감도 삼중사극자 GC/MS로, 식품 잔류농약·환경 오염물질 등 극미량 성분의 정밀 정량에 강점을 가집니다.",
@@ -292,6 +316,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "Py-GCMS",
+    image: "image/SSK종합카탈로그_images/page028_img06.png",
     model: "열분해 GC-MS",
     tagline: "열분해 가스 크로마토그래프 질량분석",
     desc: "고분자·고체 시료를 열분해해 발생한 성분을 GC/MS로 분석하여, 재료·플라스틱 조성 분석에 사용됩니다.",
@@ -301,6 +326,7 @@ const PRODUCTS = [
   {
     category: "chromatography",
     name: "TD-30",
+    image: "image/SSK종합카탈로그_images/page028_img02.png",
     model: "열탈착",
     tagline: "열탈착 장치(Thermal Desorption)",
     desc: "흡착관에 포집한 휘발성·반휘발성 유기물을 가열 탈착해 GC/GC-MS로 도입하는 열탈착 장치입니다.",
@@ -312,6 +338,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "UV-1280",
+    image: "image/SSK종합카탈로그_images/page029_img01.png",
     model: "UV-VIS",
     tagline: "다목적 자외·가시광 분광광도계",
     desc: "단독 운용이 가능한 다목적 UV-VIS 분광광도계로, PC 없이 광도·정량·스펙트럼 측정 등 다양한 모드를 지원합니다.",
@@ -321,6 +348,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "UV-1900i",
+    image: "image/SSK종합카탈로그_images/page029_img06.png",
     model: "UV-VIS",
     tagline: "자외·가시광 분광광도계",
     desc: "초고속 스캔과 넓은 측정 파장 범위를 갖춘 자외·가시광 분광광도계로, 정량/정성 분석과 흡광도 측정에 활용됩니다.",
@@ -330,6 +358,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "UV-2600i / 2700i",
+    image: "image/SSK종합카탈로그_images/page029_img04.png",
     model: "UV-VIS-NIR",
     tagline: "고성능 자외·가시광·근적외 분광광도계",
     desc: "넓은 측정 범위와 높은 분해능을 갖춘 연구용 분광광도계로, 적분구 옵션으로 고체·필름의 투과·반사 측정도 가능합니다.",
@@ -339,6 +368,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "UV-3600i Plus",
+    image: "image/SSK종합카탈로그_images/page029_img08.png",
     model: "UV-VIS-NIR",
     tagline: "고분해능 자외·가시광·근적외 분광광도계",
     desc: "세 개의 검출기를 탑재해 자외에서 근적외까지 고감도·저잡음으로 측정하는 최상위급 분광광도계입니다.",
@@ -348,6 +378,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "SolidSpec-3700i",
+    image: "image/SSK종합카탈로그_images/page030_img03.png",
     model: "UV-VIS-NIR",
     tagline: "고체 측정 특화 분광광도계",
     desc: "대형 적분구를 탑재해 고체·박막의 투과·반사 특성을 정밀 측정하는 분광광도계로, 광학·코팅 평가에 사용됩니다.",
@@ -357,6 +388,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "IRSpirit",
+    image: "image/SSK종합카탈로그_images/page030_img02.png",
     model: "FTIR",
     tagline: "적외선 분광광도계(FTIR)",
     desc: "콤팩트한 본체로 고성능을 구현한 푸리에 변환 적외선 분광광도계로, 유기물·고분자의 구조 분석과 이물 동정에 사용됩니다.",
@@ -366,6 +398,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "IRAffinity-1S",
+    image: "image/SSK종합카탈로그_images/page030_img06.png",
     model: "FTIR",
     tagline: "보급형 적외선 분광광도계",
     desc: "높은 S/N비와 안정성을 갖춘 보급형 FTIR로, 품질관리와 일상 성분 확인 분석에 폭넓게 사용됩니다.",
@@ -375,6 +408,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "IRXross",
+    image: "image/SSK종합카탈로그_images/page030_img05.png",
     model: "FTIR",
     tagline: "고성능 멀티퍼포스 FTIR",
     desc: "빠른 측정과 폭넓은 액세서리 호환성을 갖춘 FTIR로, 연구부터 현장 분석까지 유연하게 대응합니다.",
@@ -384,6 +418,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "IRTracer-100",
+    image: "image/SSK종합카탈로그_images/page031_img01.png",
     model: "FTIR",
     tagline: "고감도 연구용 적외선 분광광도계",
     desc: "최고 수준의 S/N비를 구현한 연구용 FTIR로, 미량 시료와 미소 이물의 고감도 분석에 강점을 가집니다.",
@@ -393,6 +428,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "AIRsight",
+    image: "image/SSK종합카탈로그_images/page031_img06.png",
     model: "IR/Raman 현미경",
     tagline: "적외·라만 현미경",
     desc: "적외와 라만 측정을 하나의 장비에서 수행하는 현미 분광 시스템으로, 미소 이물·다층 시료를 상보적으로 분석합니다.",
@@ -402,6 +438,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "RF-6000",
+    image: "image/SSK종합카탈로그_images/page031_img02.png",
     model: "RF",
     tagline: "형광 분광광도계",
     desc: "세계 최고 수준의 감도를 자랑하는 형광 분광광도계로, 미량 성분 검출과 형광 물질 정량에 뛰어난 성능을 제공합니다.",
@@ -411,6 +448,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "AA-7800 시리즈",
+    image: "image/SSK종합카탈로그_images/page032_img04.png",
     model: "AAS",
     tagline: "원자흡광 분광광도계",
     desc: "불꽃/전기가열 방식을 모두 지원하는 원자흡광 분광광도계로, 중금속 등 무기 원소의 정밀 정량 분석에 사용됩니다.",
@@ -420,6 +458,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "AA-7000 시리즈",
+    image: "image/SSK종합카탈로그_images/page032_img01.png",
     model: "AAS",
     tagline: "원자흡광 분광광도계",
     desc: "안정적인 측광계와 자동화 기능을 갖춘 원자흡광 분광광도계로, 일상 무기 원소 정량 분석에 폭넓게 사용됩니다.",
@@ -429,6 +468,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "PDA-7000 / 8000",
+    image: "image/SSK종합카탈로그_images/page033_img05.png",
     model: "발광 분석",
     tagline: "발광 분석 장치(PDA)",
     desc: "방전 발광을 이용해 금속 시료의 원소 조성을 신속 분석하는 발광 분석 장치로, 금속 재료 판별·관리에 사용됩니다.",
@@ -438,6 +478,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "ICPE-9800 시리즈",
+    image: "image/SSK종합카탈로그_images/page033_img01.png",
     model: "ICP-OES",
     tagline: "ICP 발광 분석 장치",
     desc: "유도결합플라즈마 발광 분석 장치로, 다원소 동시 측정과 넓은 농도 범위 분석을 빠르게 수행합니다.",
@@ -447,6 +488,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "ICPMS-2030",
+    image: "image/SSK종합카탈로그_images/page033_img02.png",
     model: "ICP-MS",
     tagline: "ICP 질량분석기",
     desc: "유도결합플라즈마 질량분석기로, 초미량 다원소 동시 분석을 빠르게 수행하여 환경·반도체·식품 분야에 활용됩니다.",
@@ -456,6 +498,7 @@ const PRODUCTS = [
   {
     category: "spectroscopy",
     name: "ICPMS-2030 LF",
+    image: "image/SSK종합카탈로그_images/page033_img04.png",
     model: "ICP-MS",
     tagline: "저유량 ICP 질량분석기",
     desc: "아르곤 가스 소비를 크게 줄인 저유량(Low Flow) ICP-MS로, 운용 비용을 절감하면서 초미량 분석을 수행합니다.",
@@ -467,6 +510,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "SH-100",
+    image: "image/SSK종합카탈로그_images/page034_img01.png",
     model: "조직 분쇄기",
     tagline: "조직 분쇄기(호모지나이저)",
     desc: "조직·세포 시료를 균질하게 파쇄하여 핵산·단백질 추출 전처리를 안정적으로 수행하는 조직 분쇄 장치입니다.",
@@ -476,6 +520,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "QuickGene Series",
+    image: "image/SSK종합카탈로그_images/page034_img02.png",
     model: "핵산 추출",
     tagline: "핵산(DNA·RNA) 추출 장치 및 시약",
     desc: "독자적인 다공성 멤브레인 기술로 고품질 핵산을 신속·간편하게 추출하는 장치로, 수동형부터 전자동형까지 라인업과 전용 시약을 제공합니다.",
@@ -485,6 +530,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "GENE PREP STAR",
+    image: "image/SSK종합카탈로그_images/page036_img04.png",
     model: "핵산 추출",
     tagline: "핵산 추출 장치",
     desc: "혈액·조직 등 다양한 시료에서 핵산을 자동으로 추출하는 장치로, 검사 처리량과 재현성을 높여줍니다.",
@@ -494,6 +540,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "GENE PREP STAR NA-480 PLUS / PI-480",
+    image: "image/SSK종합카탈로그_images/page036_img05.png",
     model: "전자동 gDNA",
     tagline: "전자동 gDNA 추출 장치",
     desc: "시료 분주부터 정제까지 전 과정을 자동화한 gDNA 추출 시스템으로, 대량 검체의 안정적 처리에 적합합니다.",
@@ -503,6 +550,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "BioSpec-nano",
+    image: "image/SSK종합카탈로그_images/page036_img03.png",
     model: "Spectro",
     tagline: "라이프사이언스 분광광도계",
     desc: "극미량(μL) 시료로 핵산·단백질 농도를 신속 측정하는 마이크로볼륨 분광광도계입니다.",
@@ -512,6 +560,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "MultiNA",
+    image: "image/SSK종합카탈로그_images/page036_img01.png",
     model: "MCE-202",
     tagline: "Microchip 자동 전기영동 장치",
     desc: "마이크로칩 전기영동 방식으로 DNA·RNA를 자동 분리·정량하여, 유전자형 분석과 식품 유전자 검사 등에 사용됩니다.",
@@ -521,6 +570,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "TMSPC-8",
+    image: "image/SSK종합카탈로그_images/page036_img02.png",
     model: "Tm 해석",
     tagline: "Tm 해석 시스템",
     desc: "핵산의 융해 온도(Tm)를 측정·해석하는 시스템으로, 유전자 변이 분석과 핵산 구조 연구에 활용됩니다.",
@@ -530,6 +580,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "유전자 검사 시약",
+    image: "image/SSK종합카탈로그_images/page037_img01.png",
     model: "Reagent",
     tagline: "유전자 검사용 시약",
     desc: "식품·임상 검사를 위한 유전자 검사 시약 라인업으로, 신속하고 신뢰성 높은 검출을 지원합니다.",
@@ -539,6 +590,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "GF-Q150",
+    image: "image/SSK종합카탈로그_images/page037_img03.png",
     model: "Quick-RT-PCR",
     tagline: "실시간 유전자 검출 장치",
     desc: "신속 실시간 RT-PCR 방식으로 유전자를 검출하는 장치로, 현장 식품·병원체 검사에 활용됩니다.",
@@ -548,6 +600,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "AXIMA Series",
+    image: "image/SSK종합카탈로그_images/page037_img04.png",
     model: "MALDI-TOF",
     tagline: "MALDI-TOF 질량분석기",
     desc: "매트릭스 지원 레이저 탈착 이온화 방식의 MALDI-TOF로, 단백질·펩타이드·합성 고분자 등 폭넓은 분석에 사용됩니다.",
@@ -557,6 +610,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "MALDI-7090",
+    image: "image/SSK종합카탈로그_images/page038_img02.png",
     model: "MALDI-TOF",
     tagline: "MALDI-TOF-TOF 질량분석기",
     desc: "TOF-TOF 구조로 정밀한 구조 분석이 가능한 상위급 MALDI 질량분석기로, 단백체·대사체 연구에 활용됩니다.",
@@ -566,6 +620,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "MALDI-8020",
+    image: "image/SSK종합카탈로그_images/page038_img06.png",
     model: "MALDI-TOF",
     tagline: "콤팩트 MALDI-TOF 질량분석기",
     desc: "콤팩트한 본체로 단백질·펩타이드·미생물 동정 등 다양한 연구를 지원하는 보급형 MALDI-TOF 질량분석기입니다.",
@@ -575,6 +630,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "GlycoAutoPrep",
+    image: "image/SSK종합카탈로그_images/page038_img04.png",
     model: "Glycan 전처리",
     tagline: "전자동 glycan 전처리 장치",
     desc: "당쇄(glycan)의 유리·정제·표지 전처리를 자동화하는 장치로, 바이오 의약품의 당쇄 분석을 효율화합니다.",
@@ -584,6 +640,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "PPSQ-51A / 53A",
+    image: "image/SSK종합카탈로그_images/page038_img03.png",
     model: "Sequencer",
     tagline: "단백질/펩타이드 서열 분석기",
     desc: "에드만 분해법 기반의 N-말단 아미노산 서열 분석기로, 단백질의 1차 구조 규명에 사용됩니다.",
@@ -593,6 +650,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "자동 용출시험 장치",
+    image: "image/SSK종합카탈로그_images/page039_img02.png",
     model: "Dissolution",
     tagline: "자동 용출시험 시스템",
     desc: "의약품의 용출 거동을 자동으로 시험·측정하는 시스템으로, 제제 품질평가와 규격 시험에 사용됩니다.",
@@ -602,6 +660,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "SP-3",
+    image: "image/SSK종합카탈로그_images/page039_img05.png",
     model: "시료 조제",
     tagline: "전자동 시료용액 조제 장치",
     desc: "칭량·용해·희석 등 시료용액 조제 과정을 자동화하여, 분석 전처리의 정확도와 처리량을 높이는 장치입니다.",
@@ -611,6 +670,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "LIGHTNIRS",
+    image: "image/SSK종합카탈로그_images/page040_img04.png",
     model: "fNIRS",
     tagline: "근적외광 뇌기능 이미징 장치",
     desc: "휴대형 근적외광 분광 시스템으로, 비침습적으로 뇌 혈류 변화를 측정하여 뇌기능 연구에 활용됩니다.",
@@ -620,6 +680,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "LABNIRS",
+    image: "image/SSK종합카탈로그_images/page040_img06.png",
     model: "fNIRS",
     tagline: "다채널 근적외광 뇌기능 이미징 장치",
     desc: "다채널 측정으로 넓은 뇌 영역의 혈류 변화를 동시에 이미징하는 연구용 fNIRS 시스템입니다.",
@@ -629,6 +690,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "전임상 CT / PET",
+    image: "image/SSK종합카탈로그_images/page040_img11.png",
     model: "In vivo Imaging",
     tagline: "전임상 이미징 장비",
     desc: "소동물의 체내 구조와 기능을 비침습적으로 촬영하는 전임상 이미징 시스템으로, 신약·바이오 연구에 활용됩니다.",
@@ -638,6 +700,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "라이프사이언스 시약 kit",
+    image: "image/SSK종합카탈로그_images/page042_img02.png",
     model: "Reagent Kit",
     tagline: "세포배양·당쇄 분석용 시약",
     desc: "세포배양 기재와 당쇄 분석을 위한 시약 kit 라인업으로, 재현성 높은 연구 환경을 지원합니다.",
@@ -647,6 +710,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "Well plate",
+    image: "image/SSK종합카탈로그_images/page042_img03.png",
     model: "배양 소모품",
     tagline: "세포배양용 웰 플레이트",
     desc: "스페로이드 형성과 단백질 저흡착 등 용도별 표면 처리를 적용한 세포배양 웰 플레이트 라인업입니다.",
@@ -656,6 +720,7 @@ const PRODUCTS = [
   {
     category: "lifescience",
     name: "CELL PICKER",
+    image: "image/SSK종합카탈로그_images/page043_img05.png",
     model: "Colony Picking",
     tagline: "세포 콜로니 피킹 장치",
     desc: "목적 세포 콜로니를 자동으로 인식·선별·회수하는 장치로, 세포주 구축과 클론 선별 작업을 효율화합니다.",
@@ -667,6 +732,7 @@ const PRODUCTS = [
   {
     category: "environmental",
     name: "TOC-L 시리즈",
+    image: "image/SSK종합카탈로그_images/page044_img03.png",
     model: "TOC",
     tagline: "총유기탄소분석기",
     desc: "연소 촉매 산화 방식으로 수중 총유기탄소를 고감도·고정밀로 측정하는 분석기로, 수질·제약 세정 검증에 사용됩니다.",
@@ -676,6 +742,7 @@ const PRODUCTS = [
   {
     category: "environmental",
     name: "TOC-4200 시리즈",
+    image: "image/SSK종합카탈로그_images/page045_img03.png",
     model: "On-line TOC",
     tagline: "온라인 총유기탄소분석기",
     desc: "공정/배수 라인에 직접 설치하여 총유기탄소를 24시간 연속 모니터링하는 온라인 분석 시스템으로, 수질 TMS 연동을 지원합니다.",
@@ -685,6 +752,7 @@ const PRODUCTS = [
   {
     category: "environmental",
     name: "7000 시리즈",
+    image: "image/SSK종합카탈로그_images/page045_img04.png",
     model: "Portable Gas",
     tagline: "휴대용 가스 분석기",
     desc: "현장에서 즉시 가스 성분을 측정할 수 있는 휴대형 분석기(NOA-7000·CGT-7100·SOA-7000)로, 환경 모니터링과 안전 관리에 사용됩니다.",
@@ -696,6 +764,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "AGX-V",
+    image: "image/SSK종합카탈로그_images/page046_img04.png",
     model: "UTM",
     tagline: "프리미엄 만능 재료 시험기",
     desc: "고속 데이터 샘플링과 고강성 프레임을 갖춘 프리미엄급 만능 재료 시험기로, 정밀한 인장·압축·굽힘 평가를 제공합니다.",
@@ -705,6 +774,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "AGS-X 시리즈",
+    image: "image/SSK종합카탈로그_images/page046_img01.png",
     model: "UTM",
     tagline: "만능 재료 시험기",
     desc: "인장·압축·굽힘 등 다양한 재료 물성을 정밀 측정하는 만능 재료 시험기로, 금속·플라스틱·고무 등 폭넓은 소재에 대응합니다.",
@@ -714,6 +784,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "EZ-Test 시리즈",
+    image: "image/SSK종합카탈로그_images/page046_img02.png",
     model: "Tester",
     tagline: "콤팩트 탁상형 시험기",
     desc: "탁상에 설치 가능한 콤팩트 재료 시험기로, 식품 식감 평가부터 부품 강도 시험까지 간편하게 수행합니다.",
@@ -723,6 +794,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "신율계 (DSES / SIE / TRView X)",
+    image: "image/SSK종합카탈로그_images/page047_img01.png",
     model: "Extensometer",
     tagline: "신율계(변형률 측정 장치)",
     desc: "시험 중 시료의 변형(신율)을 정밀 측정하는 신율계 라인업으로, 접촉식부터 비접촉 영상식까지 제공합니다.",
@@ -732,6 +804,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "UH-X / FX 시리즈",
+    image: "image/SSK종합카탈로그_images/page047_img07.png",
     model: "유압식 UTM",
     tagline: "유압식 만능 재료 시험기",
     desc: "대하중 시험에 대응하는 유압식 만능 재료 시험기로, 금속·콘크리트 등 고강도 소재의 인장·압축 시험에 사용됩니다.",
@@ -741,6 +814,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "고강성 압축 시험기",
+    image: "image/SSK종합카탈로그_images/page047_img08.png",
     model: "Compression",
     tagline: "고강성 압축 시험기",
     desc: "높은 강성의 프레임으로 미소 변형까지 정밀하게 측정하는 압축 시험기로, 고정밀 압축 물성 평가에 사용됩니다.",
@@ -750,6 +824,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "SERVOPULSER EHF 시리즈",
+    image: "image/SSK종합카탈로그_images/page048_img02.png",
     model: "Fatigue",
     tagline: "유압식 피로·내구 시험기",
     desc: "반복 하중을 가하여 재료·부품의 피로 수명과 내구성을 평가하는 유압식 시험기로, 자동차·항공·구조물 분야에 사용됩니다.",
@@ -759,6 +834,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "NJ-SERVO",
+    image: "image/SSK종합카탈로그_images/page048_img03.png",
     model: "Fatigue",
     tagline: "피로·내구 시험기",
     desc: "정밀한 하중 제어로 재료·부품의 피로 거동을 평가하는 시험기로, 다양한 내구성 시험에 대응합니다.",
@@ -768,6 +844,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "EMT 시리즈",
+    image: "image/SSK종합카탈로그_images/page048_img05.png",
     model: "전자력 Fatigue",
     tagline: "전자력식 피로 시험기",
     desc: "전자력 가진 방식으로 저소음·고응답 반복 하중을 구현하는 피로 시험기로, 소형 부품·소재 평가에 적합합니다.",
@@ -777,6 +854,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "MICRO SERVO MMT",
+    image: "image/SSK종합카탈로그_images/page048_img07.png",
     model: "전자력 Fatigue",
     tagline: "초소형 정밀 시험기",
     desc: "미소 하중을 정밀하게 제어하는 초소형 전자력식 시험기로, 미세 부품·재료의 인장·피로 평가에 사용됩니다.",
@@ -786,6 +864,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "EHF-J 시리즈",
+    image: "image/SSK종합카탈로그_images/page049_img02.png",
     model: "구조물 Fatigue",
     tagline: "대형 구조물 피로 시험기",
     desc: "대형 구조물·부재에 대용량 반복 하중을 가하여 피로·내구성을 평가하는 유압식 대형 시험 시스템입니다.",
@@ -795,6 +874,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "Hydro Shot HITS 시리즈",
+    image: "image/SSK종합카탈로그_images/page049_img01.png",
     model: "충격 시험",
     tagline: "고속 충격·인장·압축 시험기",
     desc: "고속도로 충격·인장·압축 하중을 가하여 재료의 고속 변형 거동을 평가하는 시험기로, 자동차 충돌 안전 연구 등에 사용됩니다.",
@@ -804,6 +884,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "CFT-EX",
+    image: "image/SSK종합카탈로그_images/page049_img04.png",
     model: "Flow Tester",
     tagline: "유동성·열 특성 측정기(Flow tester)",
     desc: "온도·압력을 가하며 수지의 유동 특성을 측정하는 캐필러리 레오미터로, 고분자 가공성 평가에 사용됩니다.",
@@ -813,6 +894,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "SMV-301 / 301RT",
+    image: "image/SSK종합카탈로그_images/page049_img05.png",
     model: "Viscometer",
     tagline: "점도 측정기(Viscometer)",
     desc: "회전식 방식으로 액체의 점도를 정밀 측정하는 점도계로, 도료·식품·화학 제품의 품질관리에 사용됩니다.",
@@ -822,6 +904,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "HMV-G 시리즈",
+    image: "image/SSK종합카탈로그_images/page050_img01.png",
     model: "Hardness",
     tagline: "마이크로 비커스 경도 시험기",
     desc: "비커스·누프 방식으로 재료 표면 경도를 정밀 측정하는 경도 시험기입니다.",
@@ -831,6 +914,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "DUH-211 / 211S",
+    image: "image/SSK종합카탈로그_images/page050_img02.png",
     model: "Hardness",
     tagline: "동적 초미소 경도계",
     desc: "하중·변위를 연속 측정하여 박막·미소 영역의 경도와 탄성 등 물성을 평가하는 동적 초미소 경도계입니다.",
@@ -840,6 +924,7 @@ const PRODUCTS = [
   {
     category: "material",
     name: "MCT-211 / 511",
+    image: "image/SSK종합카탈로그_images/page050_img03.png",
     model: "Micro Compression",
     tagline: "미소 압축 시험기",
     desc: "미립자·미소 부품에 정밀 하중을 가해 강도와 변형 특성을 평가하는 미소 압축 시험기입니다.",
@@ -851,6 +936,7 @@ const PRODUCTS = [
   {
     category: "particle",
     name: "iSpect DIA-10",
+    image: "image/SSK종합카탈로그_images/page050_img06.png",
     model: "입도/형상",
     tagline: "입자 형상·크기 동적 이미징 분석기",
     desc: "유동하는 입자를 실시간으로 촬영·해석하여 크기와 형상 분포를 동시에 측정하는 동적 이미지 입자 분석기입니다.",
@@ -860,6 +946,7 @@ const PRODUCTS = [
   {
     category: "particle",
     name: "SALD-2300 / 7500nano",
+    image: "image/SSK종합카탈로그_images/page050_img05.png",
     model: "Particle",
     tagline: "레이저 회절식 입도 분포 측정기",
     desc: "레이저 회절/산란 방식으로 나노미터 영역까지 입자 크기 분포를 측정하는 입도분석기입니다.",
@@ -869,6 +956,7 @@ const PRODUCTS = [
   {
     category: "particle",
     name: "AP 시리즈",
+    image: "image/SSK종합카탈로그_images/page051_img01.png",
     model: "Balance",
     tagline: "분석용 전자 저울",
     desc: "고분해능 정밀 전자저울로, 미량 시료 칭량과 정량 분석 전처리에 사용됩니다.",
@@ -878,6 +966,7 @@ const PRODUCTS = [
   {
     category: "particle",
     name: "AT-R 시리즈",
+    image: "image/SSK종합카탈로그_images/page051_img02.png",
     model: "Balance",
     tagline: "고정밀 분석 저울",
     desc: "온도 변화에 강한 안정성을 갖춘 고정밀 분석용 전자저울로, 정밀 칭량과 규격 시험에 사용됩니다.",
@@ -887,6 +976,7 @@ const PRODUCTS = [
   {
     category: "particle",
     name: "AU 시리즈",
+    image: "image/SSK종합카탈로그_images/page051_img03.png",
     model: "Balance",
     tagline: "범용 정밀 전자 저울",
     desc: "사용 편의성과 신뢰성을 갖춘 범용 정밀 전자저울로, 실험실 일상 칭량 업무에 폭넓게 사용됩니다.",
@@ -896,6 +986,7 @@ const PRODUCTS = [
   {
     category: "particle",
     name: "UP 시리즈",
+    image: "image/SSK종합카탈로그_images/page051_img05.png",
     model: "Balance",
     tagline: "다용도 전자 저울",
     desc: "다양한 칭량 범위와 기능을 제공하는 다용도 전자저울로, 생산·연구 현장에 두루 활용됩니다.",
@@ -905,6 +996,7 @@ const PRODUCTS = [
   {
     category: "particle",
     name: "MOC63u",
+    image: "image/SSK종합카탈로그_images/page051_img04.png",
     model: "Moisture",
     tagline: "가열 건조식 수분 측정기",
     desc: "가열 건조 방식으로 시료의 수분 함량을 신속·정확하게 측정하는 장비입니다.",
@@ -914,6 +1006,7 @@ const PRODUCTS = [
   {
     category: "particle",
     name: "STABLO-AP",
+    image: "image/SSK종합카탈로그_images/page051_img07.png",
     model: "Ionizer",
     tagline: "정전기 제거 장치",
     desc: "칭량 시 시료에 발생하는 정전기를 제거하여 측정 오차를 줄여주는 제전 장치입니다.",
@@ -925,6 +1018,7 @@ const PRODUCTS = [
   {
     category: "xray",
     name: "EDX-7200",
+    image: "image/SSK종합카탈로그_images/page052_img01.png",
     model: "EDX",
     tagline: "에너지 분산형 형광 X선 분석 장치",
     desc: "비파괴로 시료의 원소 조성을 정성·정량 분석하는 에너지 분산형 형광 X선 분석기로, RoHS 규제 대응에 활용됩니다.",
@@ -934,6 +1028,7 @@ const PRODUCTS = [
   {
     category: "xray",
     name: "EDX-8100",
+    image: "image/SSK종합카탈로그_images/page052_img02.png",
     model: "EDX",
     tagline: "고감도 형광 X선 분석 장치",
     desc: "고감도 검출기를 탑재한 에너지 분산형 형광 X선 분석 장치로, 미량 원소까지 정밀하게 분석합니다.",
@@ -943,6 +1038,7 @@ const PRODUCTS = [
   {
     category: "xray",
     name: "EDX-LE / LE Plus",
+    image: "image/SSK종합카탈로그_images/page052_img04.png",
     model: "EDX",
     tagline: "RoHS/ELV 스크리닝 형광 X선 분석기",
     desc: "헬륨 퍼지 없이 경원소까지 분석 가능한 보급형 EDX로, RoHS·ELV 규제 유해원소 스크리닝에 특화되어 있습니다.",
@@ -952,6 +1048,7 @@ const PRODUCTS = [
   {
     category: "xray",
     name: "Xspecia",
+    image: "image/SSK종합카탈로그_images/page052_img03.png",
     model: "EDXRF",
     tagline: "형광 X선 분석 솔루션",
     desc: "도금 두께 측정 및 미소부 원소 분석에 특화된 형광 X선 분석 장비입니다.",
@@ -963,6 +1060,7 @@ const PRODUCTS = [
   {
     category: "ndt",
     name: "InspeXio SMX-225CT FPD HR Plus",
+    image: "image/SSK종합카탈로그_images/page053_img01.png",
     model: "X-ray CT",
     tagline: "X선 CT 비파괴 검사 장비",
     desc: "X선 투과/CT 촬영으로 제품 내부 결함을 비파괴로 검사하는 장비로, 전자부품·배터리 내부 검사에 사용됩니다.",
@@ -972,6 +1070,7 @@ const PRODUCTS = [
   {
     category: "ndt",
     name: "XSeeker 8000",
+    image: "image/SSK종합카탈로그_images/page053_img02.png",
     model: "X-ray CT",
     tagline: "콤팩트 X선 CT 검사 장비",
     desc: "콤팩트한 본체로 3D CT 검사를 수행하는 X선 검사 장비로, 부품 내부 구조 관찰과 결함 분석에 사용됩니다.",
@@ -981,6 +1080,7 @@ const PRODUCTS = [
   {
     category: "ndt",
     name: "MIV-X",
+    image: "image/SSK종합카탈로그_images/page053_img04.png",
     model: "SAT",
     tagline: "초음파 광 탐상기",
     desc: "초음파를 이용해 재료 내부의 박리·공극 등 결함을 비파괴로 검출하는 탐상 장비입니다.",
@@ -990,6 +1090,7 @@ const PRODUCTS = [
   {
     category: "ndt",
     name: "SPM-Nanoa",
+    image: "image/SSK종합카탈로그_images/page053_img05.png",
     model: "SPM/AFM",
     tagline: "주사탐침현미경 / 원자간력현미경",
     desc: "나노미터 분해능으로 표면 형상과 물성을 측정하는 주사탐침현미경(SPM/AFM)입니다.",
@@ -1001,6 +1102,7 @@ const PRODUCTS = [
   {
     category: "consumables",
     name: "HPLC/GC/GPC 컬럼",
+    image: "image/SSK종합카탈로그_images/page054_img01.png",
     model: "Columns",
     tagline: "분석용 컬럼 라인업",
     desc: "다양한 분리 모드를 지원하는 HPLC·GC·GPC 컬럼으로, 분석 목적에 맞는 최적의 분리 성능을 제공합니다.",
@@ -1010,6 +1112,7 @@ const PRODUCTS = [
   {
     category: "consumables",
     name: "고순도 질소/수소 발생기",
+    image: "image/SSK종합카탈로그_images/page057_img02.png",
     model: "Gas Gen.",
     tagline: "분석용 가스 발생 장치",
     desc: "분석에 필요한 고순도 질소·수소를 자체 생성하여 가스 봄베 교체 부담을 줄여주는 가스 발생기(ATN-1050·Lab Tower 등)입니다.",
@@ -1019,6 +1122,7 @@ const PRODUCTS = [
   {
     category: "consumables",
     name: "고순도 용매",
+    image: "image/SSK종합카탈로그_images/page054_img04.png",
     model: "Solvent",
     tagline: "분석용 고순도 용매",
     desc: "HPLC·LC/MS 등 정밀 분석에 적합한 고순도 용매로, 낮은 불순물로 안정적인 분석 결과를 지원합니다.",
@@ -1028,6 +1132,7 @@ const PRODUCTS = [
   {
     category: "consumables",
     name: "바이알 / 캡 / 인서트",
+    image: "image/SSK종합카탈로그_images/page054_img05.png",
     model: "Vial",
     tagline: "오토샘플러용 바이알 소모품",
     desc: "오토샘플러에 사용하는 바이알·캡·인서트 라인업으로, 시료 보관과 주입의 재현성을 보장합니다.",
@@ -1037,6 +1142,7 @@ const PRODUCTS = [
   {
     category: "consumables",
     name: "시린지 필터",
+    image: "image/SSK종합카탈로그_images/page054_img08.png",
     model: "Filter",
     tagline: "전처리용 시린지 필터",
     desc: "시료 내 입자를 제거해 컬럼과 기기를 보호하는 시린지 필터로, 다양한 멤브레인·기공 크기를 제공합니다.",
@@ -1046,6 +1152,7 @@ const PRODUCTS = [
   {
     category: "consumables",
     name: "주사기 / Tacta 피펫",
+    image: "image/SSK종합카탈로그_images/page055_img05.png",
     model: "Liquid Handling",
     tagline: "정밀 분주·주입 기구",
     desc: "정밀 분주를 위한 주사기와 인체공학적 Tacta 피펫 라인업으로, 정확하고 편안한 액체 취급을 지원합니다.",
@@ -1055,6 +1162,7 @@ const PRODUCTS = [
   {
     category: "consumables",
     name: "가스필터 (Super Clean)",
+    image: "image/SSK종합카탈로그_images/page055_img04.png",
     model: "Gas Filter",
     tagline: "캐리어 가스 정제 필터",
     desc: "GC 등 캐리어 가스의 수분·산소·유기물을 제거하는 Super Clean 가스필터로, 검출기 보호와 안정적 분석을 돕습니다.",
@@ -1064,6 +1172,7 @@ const PRODUCTS = [
   {
     category: "consumables",
     name: "샘플 펠렛 제작 프레스",
+    image: "image/SSK종합카탈로그_images/page055_img03.png",
     model: "Press",
     tagline: "시료 펠렛 제작 프레스",
     desc: "분말 시료를 펠렛으로 성형하는 프레스로, FTIR·XRF 등 분석을 위한 균일한 시료 제작에 사용됩니다.",
@@ -1073,6 +1182,7 @@ const PRODUCTS = [
   {
     category: "consumables",
     name: "실험실 안전 제품",
+    image: "image/SSK종합카탈로그_images/page055_img07.png",
     model: "Lab Safety",
     tagline: "안전 캡·폐액 수집 시스템",
     desc: "용제 증기 누출을 막는 안전 캡과 폐액 수집 시스템으로, 실험실 환경과 작업자 안전을 보호합니다.",
@@ -1082,6 +1192,7 @@ const PRODUCTS = [
   {
     category: "consumables",
     name: "시약장 / 폐액 수집함",
+    image: "image/SSK종합카탈로그_images/page056_img04.png",
     model: "Storage",
     tagline: "시약·폐액 보관 솔루션",
     desc: "냉동형 필터시약장(SP-SSK-SF1/SFD1)과 폐액 안전 보관함 등 시약·폐액을 안전하게 보관하는 제품입니다.",
@@ -1091,6 +1202,7 @@ const PRODUCTS = [
   {
     category: "consumables",
     name: "가스 정화장치",
+    image: "image/SSK종합카탈로그_images/page057_img04.png",
     model: "Gas Purifier",
     tagline: "실험실 가스 정화장치",
     desc: "실험·분석에 사용하는 가스의 불순물을 정화하는 장치(SP-LAC·SP-SSK-GP2)로, 청정한 가스 공급을 보장합니다.",

@@ -1,0 +1,12 @@
+# 개발용/파싱 보조 산출물 (사이트 배포에는 불필요)
+docs/_montages/
+docs/_img_report.json
+docs/_img_analyze.py
+docs/_montage.py
+docs/_inject_images.py
+docs/_used_images.txt
+docs/SSK종합카탈로그_result.md
+
+# OS
+Thumbs.db
+.DS_Store
