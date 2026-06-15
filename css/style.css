@@ -784,6 +784,29 @@ h1, h2, h3, h4 {
   min-height: 130px;
 }
 
+.field-hint {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 7px;
+  line-height: 1.5;
+}
+
+.field-warn {
+  display: none;
+  font-size: 0.84rem;
+  color: #b3261e;
+  margin-top: 7px;
+  line-height: 1.5;
+}
+
+.field-warn.show {
+  display: block;
+}
+
+.form-group input.invalid {
+  border-color: #b3261e;
+}
+
 .form-note {
   font-size: 0.85rem;
   color: var(--color-text-muted);

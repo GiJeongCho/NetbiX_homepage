@@ -22,6 +22,32 @@
   const WEB3FORMS_ACCESS_KEY = "57cc4300-8810-4097-89d7-a27c0b58a604";
   const CONTACT_TO_EMAIL = "a01095895690@gmail.com";
 
+  /* 회신(메일 발송)이 자주 막히는 도메인 — 카카오/다음/네이트 등 국내 ISP는
+   * 외부 자동발송 메일의 SPF/DKIM 인증을 까다롭게 차단하므로 권장하지 않습니다.
+   * 네이버는 가능합니다. */
+  const BLOCKED_EMAIL_DOMAINS = [
+    "kakao.com",
+    "daum.net",
+    "hanmail.net",
+    "nate.com",
+    "korea.com",
+    "paran.com",
+    "empas.com",
+    "freechal.com",
+  ];
+
+  // 반환: { valid, blocked, domain }  (valid=형식 정상, blocked=수신 까다로운 도메인)
+  const inspectEmail = (value) => {
+    const email = (value || "").trim().toLowerCase();
+    const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    const domain = ok ? email.split("@")[1] : "";
+    return {
+      valid: ok,
+      blocked: ok && BLOCKED_EMAIL_DOMAINS.indexOf(domain) !== -1,
+      domain,
+    };
+  };
+
   /* ---------- 카테고리 이름 조회 헬퍼 ---------- */
   const catName = (id) => {
     const c = CATEGORIES.find((x) => x.id === id);
@@ -183,10 +209,37 @@
     };
     const hideMsg = (box) => box && box.classList.remove("show");
 
+    // 이메일 도메인 실시간 검사: 수신 까다로운 도메인이면 경고 표시
+    const emailInput = form.querySelector("#email");
+    const emailWarn = document.getElementById("email-warn");
+    const validateEmailField = () => {
+      if (!emailInput || !emailWarn) return true;
+      const info = inspectEmail(emailInput.value);
+      if (info.blocked) {
+        emailWarn.textContent = `‘${info.domain}’ 메일은 회신이 전달되지 않을 수 있습니다. Gmail · 네이버 · Outlook 등 다른 메일을 사용해 주세요.`;
+        emailWarn.classList.add("show");
+        emailInput.classList.add("invalid");
+        return false;
+      }
+      emailWarn.classList.remove("show");
+      emailInput.classList.remove("invalid");
+      return true;
+    };
+    if (emailInput) {
+      emailInput.addEventListener("input", validateEmailField);
+      emailInput.addEventListener("blur", validateEmailField);
+    }
+
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
       hideMsg(success);
       hideMsg(errorBox);
+
+      // 회신 불가 도메인이면 전송 차단
+      if (!validateEmailField()) {
+        if (emailInput) emailInput.focus();
+        return;
+      }
 
       // 키 미설정 가드
       if (!WEB3FORMS_ACCESS_KEY || WEB3FORMS_ACCESS_KEY === "YOUR_WEB3FORMS_ACCESS_KEY") {
