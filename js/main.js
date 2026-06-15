@@ -260,6 +260,7 @@
         name: val("name"),
         email: val("email"),
         "회사/기관": val("company") || "(미입력)",
+        "연락처": val("phone") || "(미입력)",
         "관심 제품군": interestId ? catName(interestId) : "선택 안 함",
         message: val("message"),
       };
