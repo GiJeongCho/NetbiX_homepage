@@ -1,6 +1,6 @@
-# NetbiX_homepage — Docker 로 띄우기
+# NetbiX_homepage — Docker 로 띄우기 (단일 컨테이너)
 
-정적 홈페이지(빌드 과정 없음)를 nginx 컨테이너로 단독 실행한다.
+정적 홈페이지(빌드 과정 없음)를 nginx **단일 컨테이너**로 실행한다. 컴포즈 불필요.
 NIT_train 과는 별개 컨테이너라 포트만 안 겹치면 같은 PC 에서 함께 떠도 된다.
 
 | 항목 | 값 |
@@ -9,6 +9,7 @@ NIT_train 과는 별개 컨테이너라 포트만 안 겹치면 같은 PC 에서
 | 포트 | 호스트 **8080** → 컨테이너 80 |
 | 접속 | http://localhost:8080 |
 | 도메인 | netbitex.com (`CNAME`) |
+| DB | 없음 (정적 사이트) |
 
 ## 구성
 
@@ -21,12 +22,13 @@ NIT_train 과는 별개 컨테이너라 포트만 안 겹치면 같은 PC 에서
 
 ```powershell
 cd C:\project\NetbiX_homepage
-docker compose up -d --build
+docker build -t netbix-homepage:latest .
+docker run -d --name netbix-homepage --restart unless-stopped -p 8080:80 netbix-homepage:latest
 ```
 
 - 화면: http://localhost:8080
-- 상태: `docker compose ps`
-- 로그: `docker compose logs -f netbix-homepage`
+- 상태: `docker ps`
+- 로그: `docker logs -f netbix-homepage`
 
 컨테이너 없이 로컬 확인만 할 거면 빌드 없이:
 ```powershell
@@ -36,16 +38,20 @@ python -m http.server 8000      # http://localhost:8000
 ## 중지 / 삭제 / 갱신
 
 ```powershell
-docker compose stop              # 멈춤
-docker compose down              # 컨테이너 제거
-docker compose up -d --build     # 코드 바꾼 뒤 다시 빌드·기동
+docker stop netbix-homepage                 # 멈춤
+docker rm netbix-homepage                    # 컨테이너 제거
+
+# 코드 바꾼 뒤 다시: 재빌드 → 기존 컨테이너 교체
+docker build -t netbix-homepage:latest .
+docker rm -f netbix-homepage
+docker run -d --name netbix-homepage --restart unless-stopped -p 8080:80 netbix-homepage:latest
 ```
 
-> 정적 사이트라 상태(볼륨)가 없다. 내용을 바꾸면 `--build` 로 다시 구우면 된다.
+> 정적 사이트라 상태(볼륨·DB)가 없다. 내용을 바꾸면 재빌드 후 컨테이너만 갈아끼우면 된다.
 
 ## 포트 바꾸기
 
-8080 이 이미 쓰이면 `docker-compose.yml` 의 `ports` 에서 호스트 쪽만 바꾼다. 예: `"9090:80"`.
+8080 이 이미 쓰이면 `-p` 의 호스트 쪽만 바꾼다. 예: `-p 9090:80` → http://localhost:9090
 
 ## 윈도우 함정
 

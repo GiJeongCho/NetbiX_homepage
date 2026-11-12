@@ -2,7 +2,6 @@
 .gitignore
 Dockerfile
 .dockerignore
-docker-compose.yml
 nginx.conf
 *.md
 
