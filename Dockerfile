@@ -12,11 +12,12 @@ LABEL org.opencontainers.image.title="netbix-homepage" \
       org.opencontainers.image.revision="${GIT_SHA}" \
       org.opencontainers.image.created="${BUILD_DATE}"
 
-# nginx 설정 교체(SPA 폴백 + 캐시 정책).
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-
 # 사이트 파일 복사(.dockerignore 로 docs/개발보조물 제외).
 COPY . /usr/share/nginx/html
+
+# nginx 설정 교체(SPA 폴백 + 캐시 정책). 웹 루트에 섞여 들어온 설정 파일은 서빙되지 않게 제거.
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+RUN rm -f /usr/share/nginx/html/nginx.conf
 
 EXPOSE 80
 # 베이스 이미지 기본 CMD(nginx -g 'daemon off;') 를 그대로 사용한다.

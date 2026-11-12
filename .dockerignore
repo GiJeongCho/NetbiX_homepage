@@ -2,7 +2,6 @@
 .gitignore
 Dockerfile
 .dockerignore
-nginx.conf
 *.md
 
 # 원본 카탈로그·개발 보조물(사이트 서빙에 불필요, 용량 큼).
